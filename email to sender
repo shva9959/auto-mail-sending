@@ -1,0 +1,19 @@
+import smtplib
+
+
+
+
+s = smtplib.SMTP('sm58pt.gmail.com',587)
+s.starttls()
+
+s.login('shva9959@gmail.com','Qwertyui@9959')
+
+msg = "this is my first message"
+
+receiver_mail = 'mounika.ghanta23@gmail.com'
+
+s.sendmail(my_mail,receiver_mail,msg)
+
+s.quit()
+
+print('successfully sent')
